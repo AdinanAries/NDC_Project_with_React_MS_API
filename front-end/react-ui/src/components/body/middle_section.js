@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import PostNewItemCard from '../page_cards_cards/post_item_card'
 import NewsPostCard from '../page_cards_cards/posted_news_item_card'
 import MeetingPostCard from '../page_cards_cards/posted_meeting_item_card'
+import ProjectPostCard from '../page_cards_cards/posted_project_item_card'
 
 class MiddleSection extends Component{
     render(){
@@ -12,6 +13,7 @@ class MiddleSection extends Component{
                 <div className="all_posts_container">
                     <NewsPostCard />
                     <MeetingPostCard />
+                    <ProjectPostCard />
                 </div>
             </section>
         )
