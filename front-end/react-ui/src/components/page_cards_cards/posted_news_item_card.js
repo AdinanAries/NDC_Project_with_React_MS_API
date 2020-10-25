@@ -2,8 +2,24 @@ import React, {Component} from 'react'
 import asiadu_photo from '../../pictures/Asiedu Nketia4.jpg'
 import ndc_member_pic from '../../pictures/NDCMembers.jpg'
 import PostInteractionBtns from './post_card_helpers/post_interaction_buttons'
+import PostUpdatePosterInfor from './post_card_helpers/post_update_poster_infor'
 
 class NewsPostCard extends Component{
+    constructor(props){
+        super(props)
+        this.state = {
+            poster_info: {
+                id: "random_number",
+                picture: asiadu_photo,
+                name: "Hon. Asiadu Nkatia",
+                title: "Party General Secretary",
+                date_posted: "october 12",
+                time_posted: "11:45pm",
+
+            }
+        }
+    }
+
     render(){
 
         let postInteractionsIcons = {
@@ -21,29 +37,11 @@ class NewsPostCard extends Component{
             }
         }
 
+        let post
+
         return(
             <div className="section_card news_post_card">
-                <div className="poster_details">
-                    <div className="poster_profile_pic">
-                        <img src={asiadu_photo} alt="" />
-                    </div>
-                    <div className="poster_name_details_icon">
-                        <div className="poster_name_detials">
-                            <h1>Hon. Asiadu Nkatia</h1>
-                            <p>Party General Secretary</p>
-                            <div>
-                                <div style={{display: "flex", marginTop: 4}}>
-                                    <p>october 12</p>
-                                    <i className="fa fa-circle time_date_visibility_separator" aria-hidden="true"></i>
-                                        <p>11:45pm</p>
-                                        <i  className="fa fa-circle time_date_visibility_separator" aria-hidden="true"></i>
-                                        <i style={{marginTop: -2}} className="fa fa-globe" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <i className="fa fa-ellipsis-h" aria-hidden="true"></i>
-                    </div>
-                </div>
+                <PostUpdatePosterInfor poster_info={this.state.poster_info}/>
                 <div className="news_post_content">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                         Voluptatem delectus mollitia animi labore ducimus aut consectetur beatae 
