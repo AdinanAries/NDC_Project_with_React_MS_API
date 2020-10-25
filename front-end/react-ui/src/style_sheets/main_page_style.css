@@ -390,6 +390,7 @@ main {
 .current_interactions_count i {
   font-size: 15px;
   margin-left: 10px;
+  margin-right: 5px;
 }
 .current_interactions_count span {
   color: #696969;
@@ -405,6 +406,9 @@ main {
 .post_interaction_buttons i,
 .post_interaction_buttons span {
   color: #727272;
+}
+.post_interaction_buttons i {
+  margin-right: 5px;
 }
 .post_interaction_buttons span {
   font-size: 14px;
