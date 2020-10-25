@@ -3,6 +3,7 @@ import PostNewItemCard from '../page_cards_cards/post_item_card'
 import NewsPostCard from '../page_cards_cards/posted_news_item_card'
 import MeetingPostCard from '../page_cards_cards/posted_meeting_item_card'
 import ProjectPostCard from '../page_cards_cards/posted_project_item_card'
+import JobPostCard from '../page_cards_cards/posted_job_item_card'
 
 class MiddleSection extends Component{
     render(){
@@ -14,6 +15,7 @@ class MiddleSection extends Component{
                     <NewsPostCard />
                     <MeetingPostCard />
                     <ProjectPostCard />
+                    <JobPostCard />
                 </div>
             </section>
         )
