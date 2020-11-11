@@ -22,7 +22,7 @@ class PostNewItemCard extends Component{
                 </div>
                 <div className="post_section_sub_icon">
                     <p>
-                        <i style={{color: "rgb(170, 106, 76)"}} className="fa fa-folder-o" aria-hidden="true"></i>
+                        <i style={{color: "rgb(170, 106, 76)"}} className="fa fa-folder" aria-hidden="true"></i>
                         Project
                     </p>
                 </div>

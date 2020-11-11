@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import ras_photo from '../../pictures/Ras-Mubarak.jpg'
+import MembersStats from "../page_cards_cards/members_stats"
 
 class LeftComponent extends Component{
     render(){
@@ -36,6 +37,7 @@ class LeftComponent extends Component{
                         </div>
                     </div>
                 </div>
+                <MembersStats />
             </section>
         )
     }
