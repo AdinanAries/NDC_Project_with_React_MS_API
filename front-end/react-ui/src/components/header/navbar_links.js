@@ -33,8 +33,8 @@ class NavbarLinks extends Component{
                     <li>
                         <div>
                             <div style={{position: "relative"}}>
-                                <div style={{right: 13}} className="top_nav_activity_counter" >2</div>
-                                <p><i className="fa fa-bell-o" aria-hidden="true"></i></p>
+                                <div style={{right: 10}} className="top_nav_activity_counter" >2</div>
+                                <p><i className="fa fa-bell" aria-hidden="true"></i></p>
                             </div>
                             <p>Notifications</p>
                         </div>
