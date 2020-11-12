@@ -8,6 +8,11 @@ class Main extends React.Component{
         return (
             <main>
                 <div class="wrapper">
+                <h1 style={{paddingBottom: "20px", width: "fit-content", margin: "auto", fontSize: "16px", color: "#667676"}}>
+                            <span style={{fontWeight: "bolder", color: "#0e3c99", fontSize: "16px"}}>When is the next election? </span>
+                            We are here to make sure you get all the important national notifications.
+                            <i style={{marginLeft: 15}} className="fa fa-ellipsis-h"></i>
+                        </h1>
                     <div class="body_content">
                         <LeftSection />
                         <MiddleSection />

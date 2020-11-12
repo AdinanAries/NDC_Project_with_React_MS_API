@@ -10,7 +10,8 @@ class MiddleSection extends Component{
         return(
             <section className="middle_section">
                 <PostNewItemCard />
-                <hr style={{margin: "15px 0", border: "none", borderBottom: "1px solid #d3d3d3"}} />
+                <hr style={{margin: "25px 0", border: "none", borderBottom: "1px solid #d3d3d3"}} />
+                <h1 style={{backgroundColor: "#e7eeee", padding: "5px 30px", width: "fit-content", margin: "auto", marginTop: "-40px", marginBottom: 10, fontSize: "12px"}}>Post Updates</h1>
                 <div className="all_posts_container">
                     <NewsPostCard />
                     <MeetingPostCard />

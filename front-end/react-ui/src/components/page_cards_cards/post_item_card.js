@@ -1,10 +1,21 @@
 import React, {Component} from 'react'
 
 class PostNewItemCard extends Component{
+    constructor(props){
+        super();
+        this.openMainPostCard = this.openMainPostCard.bind(this);
+    }
+
+    openMainPostCard(){
+        document.getElementById("main_popup_page_cover").style.display = "block";
+        document.getElementById("main_create_post_inputs_card").style.display = "flex";
+        
+    }
+
     render(){
         return (
             <div className="section_card post_section_card">
-                <div className="post_section_main_field">
+                <div onClick={()=>this.openMainPostCard()} className="post_section_main_field">
                     <strong><p><i className="fa fa-pencil-square-o" aria-hidden="true"></i>Post an item</p></strong>
                 </div>
                 <div className="post_card_sub_icons">

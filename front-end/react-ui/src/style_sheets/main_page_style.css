@@ -12,7 +12,7 @@ ul {
   min-width: 100vw;
   min-height: 100vh;
   position: fixed;
-  background-color: #00000086;
+  background-color: #000000b2;
   z-index: 1;
   display: none;
 }
@@ -35,11 +35,10 @@ ul {
   border-radius: 4px;
   box-shadow: 0px 1.6px 3.6px rgba(0, 0, 0, 0.2),
     0px 0px 2.9px rgba(0, 0, 0, 0.23);
-  display: none;
 }
 body {
   /*background-color: #076951;*/
-  background-color: #f7f7f7;
+  background-color: #e7eeee;
 }
 input {
   border: none;
@@ -259,7 +258,7 @@ main {
 }
 #other_stuff_container {
   /*background: linear-gradient(160deg, rgb(153, 223, 255), rgb(1, 34, 56));*/
-  background-color: rgb(0, 66, 110);
+  background-color: rgb(0, 148, 148);
   position: -webkit-sticky;
   position: sticky;
   top: 65px;
