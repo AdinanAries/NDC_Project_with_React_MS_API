@@ -15,6 +15,13 @@ export default class CreatePostCard extends Component {
         if(div_id === "main_post_news_card_inputs"){
             this.ClickCounter++;
         }
+
+        if(div_id === "popup_close_button_main"){
+            document.getElementById("main_popup_page_cover").style.display = "none";
+            document.getElementById("main_create_post_inputs_card").style.display = "none";
+            this.ClickCounter = 0;
+        }
+
         this.ClickCounter++;
         
         if(this.ClickCounter < 2){
@@ -29,6 +36,7 @@ export default class CreatePostCard extends Component {
         }
         
     }
+
     render(){
         return (
             <div onClick={()=> this.closePostCard("main_create_post_inputs_card")} id="main_create_post_inputs_card" className="create_post_inputs_card">
@@ -37,7 +45,7 @@ export default class CreatePostCard extends Component {
                         <div className="create_post_p_div_at_create_post_popup">
                             <p>Post an item</p>
                         </div>
-                        <div className="popup_close_button"><p><i class="fa fa-times" aria-hidden="true"></i></p></div>
+                        <div onClick={()=> this.closePostCard("popup_close_button_main")} id="popup_close_button_main" className="popup_close_button"><p><i class="fa fa-times" aria-hidden="true"></i></p></div>
                     </div>
                     <div className="post_news_card_inputs_header_and_textarea">
                         <div className="post_news_card_inputs_header">
