@@ -37,20 +37,45 @@ export default class CreatePostCard extends Component {
                         <div className="create_post_p_div_at_create_post_popup">
                             <p>Post an item</p>
                         </div>
-                        
                         <div className="popup_close_button"><p><i class="fa fa-times" aria-hidden="true"></i></p></div>
                     </div>
-                    <div className="post_news_card_inputs_header">
-                        <div className="post_news_card_profile_pic">
-                            <img src={rasPhoto} alt=""></img>
+                    <div className="post_news_card_inputs_header_and_textarea">
+                        <div className="post_news_card_inputs_header">
+                            <div className="post_news_card_profile_pic">
+                                <img src={rasPhoto} alt=""></img>
+                            </div>
+                            <div className="post_news_card_inputs_select_poster_div">
+                                <p>
+                                    <i style={{marginRight: "10px"}} className="fa fa-user"></i> 
+                                    Ras. Mubarak 
+                                    <i style={{marginLeft: "10px"}} className="fa fa-caret-down"></i>
+                                </p>
+                            </div>
+                            <div className="post_news_card_inputs_visibility_div">
+                                <p>
+                                    <i style={{marginRight: "10px"}} className="fa fa-globe"></i> 
+                                    Anyone 
+                                    <i style={{marginLeft: "10px"}} className="fa fa-caret-down"></i>
+                                </p>
+                            </div>
                         </div>
-                        <div className="post_news_card_inputs_select_poster_div">
-                            <p>
-                                <i style={{marginRight: "10px"}} className="fa fa-user"></i> 
-                                Ras. Mubarak 
-                                <i style={{marginLeft: "10px"}} className="fa fa-caret-down"></i>
-                            </p>
+                        <div className="post_news_card_inputs_text_area_div">
+                            <textarea placeholder="What do you have for the patriots today?"/>
                         </div>
+                    </div>
+                    <div className="icons_and_post_btn_area">
+                        <div className="icons_and_post_btn_area_icons">
+                            <div>
+                                <i className="fa fa-picture-o"></i>
+                            </div>
+                            <div>
+                                <i className="fa fa-youtube-play"></i>
+                            </div>
+                            <div>
+                                <i className="fa fa-file-text"></i>
+                            </div>
+                        </div>
+                        <div className="icons_and_post_btn_area_button">Post</div>
                     </div>
                 </div>
             </div>
