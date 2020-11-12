@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import rasPhoto from "../../pictures/Ras-Mubarak.jpg"
 
 export default class CreatePostCard extends Component {
     constructor(props){
@@ -32,7 +33,25 @@ export default class CreatePostCard extends Component {
         return (
             <div onClick={()=> this.closePostCard("main_create_post_inputs_card")} id="main_create_post_inputs_card" className="create_post_inputs_card">
                 <div onClick={()=> this.closePostCard("main_post_news_card_inputs")} id="main_post_news_card_inputs" className="post_news_card_inputs">
-
+                    <div className="post_news_card_inputs_title">
+                        <div className="create_post_p_div_at_create_post_popup">
+                            <p>Post an item</p>
+                        </div>
+                        
+                        <div className="popup_close_button"><p><i class="fa fa-times" aria-hidden="true"></i></p></div>
+                    </div>
+                    <div className="post_news_card_inputs_header">
+                        <div className="post_news_card_profile_pic">
+                            <img src={rasPhoto} alt=""></img>
+                        </div>
+                        <div className="post_news_card_inputs_select_poster_div">
+                            <p>
+                                <i style={{marginRight: "10px"}} className="fa fa-user"></i> 
+                                Ras. Mubarak 
+                                <i style={{marginLeft: "10px"}} className="fa fa-caret-down"></i>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
